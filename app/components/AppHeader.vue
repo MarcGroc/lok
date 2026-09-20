@@ -14,7 +14,7 @@ const closeMenu = () => { isMenuOpen.value = false }
       <button class="menu-toggle" type="button" :aria-expanded="isMenuOpen" aria-controls="main-nav" @click="isMenuOpen = !isMenuOpen"><span class="sr-only">{{ isMenuOpen ? 'Zamknij menu' : 'Otwórz menu' }}</span><i /><i /><i /></button>
       <nav id="main-nav" class="main-nav" :class="{ 'is-open': isMenuOpen }" aria-label="Główna nawigacja">
         <a v-for="item in klub.navigation" :key="item.href" :href="item.href" @click="closeMenu">{{ item.label }}</a>
-        <a class="nav-cta" href="#nabor" @click="closeMenu">Dołącz do nas</a>
+        <a class="button button--primary" href="#nabor" @click="closeMenu">Dołącz do nas</a>
       </nav>
     </div>
   </header>

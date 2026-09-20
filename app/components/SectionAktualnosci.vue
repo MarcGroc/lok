@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import {klub} from '~/data/klub'
+
+const facebookUrl = computed(() => {
+  const url = klub.contact.facebook?.trim()
+  return url && /^https:\/\/(www\.)?facebook\.com\//i.test(url) ? url : null
+})
 </script>
 <template>
   <section id="aktualnosci" class="section section--light news-section" aria-labelledby="news-title">
@@ -14,6 +19,7 @@ import {klub} from '~/data/klub'
           <h3>{{ entry.title }}</h3>
           <p>{{ entry.text }}</p></article>
       </div>
+      <FacebookFeed v-if="facebookUrl" :page-url="facebookUrl" />
     </div>
   </section>
 </template>

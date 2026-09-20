@@ -7,7 +7,7 @@ export const klub = {
     { label: 'O nas', href: '#o-klubie' },
     { label: 'Strzelnica', href: '#strzelnica' },
     { label: 'Kalendarz', href: '#kalendarz' },
-    { label: 'Regulamin', href: '#regulamin' },
+    { label: 'Statut', href: 'dokumenty/statut_ks_lok_rzepiska.pdf' },
     { label: 'Kontakt', href: '#kontakt' },
   ],
   contact: {
@@ -15,9 +15,10 @@ export const klub = {
     email: "info@strzelnicarzepiska.pl",
     phone: "123456789",
     hours: 'Terminy treningów publikujemy w kalendarzu.',
-    facebook: "link do fb",
+    facebook: "https://www.facebook.com/profile.php?id=100068900529892",
   },
-  calendarUrl: null as string | null,
+  calendarUrl: "https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FWarsaw&hl=pl&showTabs=0&showNav=0&showPrint=0&showTz=0&src=NDM1YTY0MmY0ZmY0M2M4MzY3MmFlYjhhMTE3YTk2NDY2ZDQxMzEwOGU2MzBkZjlmYjU5ZGVhZTc3MTQ5ZDJlMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cGwucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23d81b60&color=%230b8043",
+  calendarSubscribeUrl: null as string | null,
   stats: [
     { value: '4–6', label: 'osób jednocześnie' },
     { value: '2 godziny', label: 'czas zajęć' },
@@ -28,7 +29,7 @@ export const klub = {
     { date: 'Wkrótce', title: 'Terminy treningów', text: 'Po uruchomieniu publicznego kalendarza będziemy publikować w nim najbliższe spotkania i wydarzenia.', category: 'Treningi' },
   ],
   documents: [
-    { title: 'Deklaracja członkowska', file: '/dokumenty/deklaracja_czlonkowska.pdf', available: false },
+    { title: 'Pobierz i wypełnij deklaracje członkowską', file: 'dokumenty/deklaracja_czlonkowska.pdf', available: true },
   ],
   gallery: [] as { src: string; alt: string }[],
 }
