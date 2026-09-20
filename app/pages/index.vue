@@ -8,7 +8,14 @@ useSeoMeta({
 
 <template>
   <main>
-    <h1>KS LOK Rzepiska</h1>
-    <p>Strona w budowie — MVP w przygotowaniu.</p>
+    <HeroSection />
+    <SectionOklubie />
+    <SectionStrzelnica />
+    <SectionKalendarz />
+    <SectionNabor />
+    <SectionGaleria />
+    <SectionAktualnosci />
+    <SectionDokumenty />
+    <SectionKontakt />
   </main>
 </template>
